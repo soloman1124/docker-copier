@@ -7,7 +7,9 @@ FROM base AS builder
 
 RUN pip install --no-cache-dir \
   markupsafe==2.0.1 \
-  copier==5.1.0
+  copier==6.1.0 \
+  jinja2-time==0.2.0 \
+  jinja-markdown==1.210911
 
 FROM base AS final
 
